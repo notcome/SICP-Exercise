@@ -1,5 +1,5 @@
 #SICP-Exercise
-This is my own explanations of exercises on SICP.
+This is my own answers of exercises on SICP.
 
 Before I created this repository I had already finished Section 1&2 of Chapter 1. Therefore, the repository starts with Section 3 of Chapter 1. I may complete these exercises in the future.
 
