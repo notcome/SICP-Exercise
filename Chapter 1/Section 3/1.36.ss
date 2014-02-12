@@ -17,7 +17,7 @@ Exercise 1.36: Fixed-point with printing the sequence
           (try next))))
   (try first-guess))
 
-(define (average-damp f first-guess)
+(define (fixed-point-average-damp f first-guess)
   (define (close-enough? v1 v2)
     (< (abs (- v1 v2)) 
        tolerance))
@@ -70,7 +70,7 @@ Below is the output from mit-scheme:
 4.555540912917957
 ;Value: 4.555532270803653
 
-1 ]=> (average-damp (lambda (x) (/ (log 1000) (log x))) 2.)
+1 ]=> (fixed-point-average-damp (lambda (x) (/ (log 1000) (log x))) 2.)
 2.
 5.9828921423310435
 4.922168721308343

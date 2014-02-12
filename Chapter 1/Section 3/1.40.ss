@@ -33,5 +33,3 @@ Exericse 1.40: Newton Method in Finding Cubic Equation
 
 (define (cubic a b c) 
   (lambda (x) (+ (* x x x) (* a x x) (* b x) c)))
-
-(newtons-method (cubic a b c) 1)
