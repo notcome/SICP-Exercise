@@ -1,5 +1,5 @@
 #|
-Exercise 2.4: Alternatvie Way to Represent Pairs
+Exercise 2.4: Alternatvie Way to Represent Pairs Using Procedures
 |#
 
 (define (my-cons x y)
