@@ -2,7 +2,7 @@
 Exercise 2.20: Same Parity
 
 I am wondering if there is a way to write this program iteratively without
-invok
+invoking reverse.
 |#
 
 (define (same-parity-recursive . l)
