@@ -2,10 +2,10 @@
 Exercise 2.40: Unique-Pairs
 |#
 
-(define (generate-interval from to)
+(define (enumerate-interval  from to)
   (if (> from to)
     '()
-    (cons from (generate-interval (+ from 1) to))))
+    (cons from (enumerate-interval  (+ from 1) to))))
 
 (define (prime? n)
   (define (iter x)
@@ -32,8 +32,8 @@ Exercise 2.40: Unique-Pairs
   (flatmap
     (lambda (x)
       (map (lambda (y) (list x y))
-           (generate-interval 1 (- x 1))))
-    (generate-interval 1 n)))
+           (enumerate-interval  1 (- x 1))))
+    (enumerate-interval  1 n)))
 
 (define (prime-sum-pairs n)
   (map make-pair-sum
